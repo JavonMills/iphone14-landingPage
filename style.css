@@ -105,3 +105,22 @@ ul.specs{
     float: left;
     padding: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+      }
+    
+    .main-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #image1 {
+        padding-top: 40%;
+    }
+    
+    
+}
