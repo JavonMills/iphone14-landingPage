@@ -63,7 +63,7 @@ li a:hover:not(.active) {
 }
 
 body {
-    background-color: bisque;
+    background-color: whitesmoke;
 }
 
 #image1 {
@@ -96,7 +96,7 @@ ul.specs{
     font-size: large;
 }
 .column-left{
-    width: 25%;
+    width: 50%;
     float: left;
     padding: 15px;
 }
@@ -104,12 +104,12 @@ ul.specs{
     width: 50%;
     float: left;
     padding: 15px;
+    padding-top: 7%;
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-      }
+   
+
     
     .main-column {
         display: flex;
@@ -117,10 +117,23 @@ ul.specs{
         justify-content: center;
         flex-direction: column;
     }
+    /* this is so that the image is center when the screen is too small */
+    .column-left{
+        width: 50%;
+        float: left;
+        
+    }
 
     #image1 {
         padding-top: 40%;
+        background-color: whitesmoke;
+       
     }
     
+    #image1 img{
+        width: 100%;
+        
+    }
+
     
 }
