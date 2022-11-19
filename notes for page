@@ -41,3 +41,9 @@ The buy button will link to the apple webpage:
     https://www.apple.com/uk/shop/buy-iphone/iphone-14
 
     https://www.apple.com/uk/shop/buy-iphone/iphone-14-pro
+
+
+
+    <div id = "image3" class="image-file">
+                        <img src="iphone-14-cables-witb-202209.jfif" alt="" >
+                    </div>

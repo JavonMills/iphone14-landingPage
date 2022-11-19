@@ -7,6 +7,7 @@
     padding: 15px;
 
 }
+
 ul.bannerList {
     left: 0;
     list-style-type: none;
@@ -57,22 +58,36 @@ li a {
 li a:hover:not(.active) {
     color: green;
 }
+
+
   
 .active {
     color: green;
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
-#image1 {
+.image-file {
     height: 100%;
     width: 100%;
 }
 
 #image1 img{
     width: 100%;
+    background-color: white;
+}
+
+#image2 img {
+    width: 40%;
+}
+
+
+.image-container2 {
+    height: auto;
+    width: 30%;
+
 }
 
 .main-column {
@@ -92,9 +107,30 @@ ul.specs{
     font-size: large;
 }
 
+
+
+li.image-elem {
+    list-style: none;
+
+}
+
 .Specs-details{
     font-size: large;
 }
+
+.column-left{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.column-right{
+    width: 50%;
+    float: left;
+    padding: 15px;
+    padding-top: 7%;
+}
+
 .column-left{
     width: 50%;
     float: left;
@@ -106,6 +142,13 @@ ul.specs{
     padding: 15px;
     padding-top: 7%;
 }
+
+#bottomcol{
+    width: 50%;
+    
+
+}
+
 
 @media only screen and (max-width: 600px) {
    
@@ -121,19 +164,34 @@ ul.specs{
     .column-left{
         width: 50%;
         float: left;
-        
+        background-color: white;
     }
 
     #image1 {
-        padding-top: 40%;
-        background-color: whitesmoke;
+        padding-top: 0%;
        
-    }
-    
-    #image1 img{
-        width: 100%;
         
     }
+    
+    .image-container {
+        object-fit: cover;
+    
+
+    }
+
+    #image1 img{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #image2 img{
+        width: 40%;
+    }
+    
+  
 
     
 }
