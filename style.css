@@ -1,198 +1,103 @@
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.banner{
-    display: flex;
-    padding: 15px;
-
+.banner {
+  display: flex;
+  padding: 15px;
 }
 
 ul.bannerList {
-    left: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    float: left;
-
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  float: left;
 }
 
 li.bannerIcon {
-    float: left;
-    height: 50px;
-    width: 50px;
-
+  float: left;
+  height: 50px;
+  width: 50px;
 }
 
-.appleLogo{
-    margin-left: 10px;
-    width: 100%;
-    height: 100%;
+.appleLogo {
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 li.banner2 {
-    float: right;
-    border-right: none;
-    
+  float: right;
+  border-right: none;
 }
-  
+
 li.banner1 {
-    float: left;
-    border-right: none;
+  float: left;
+  border-right: none;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 18px;
-    text-decoration: none;
-    font-size: 20px;
-}
-  
-li a:hover:not(.active) {
-    color: green;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-.active {
-    color: green;
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background: rgba(245, 245, 245, 0.968627451);
+  margin-top: 1.6%;
+}
+.top .left {
+  padding-right: 4%;
+}
+.top .left img {
+  width: 800px;
+}
+.top .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 596px;
+}
+.top .right p {
+  font-size: 63px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.top .right ul {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  width: 588px;
+}
+.top .right ul li {
+  list-style: none;
+  font-size: 24px;
+  width: -webkit-fill-available;
+  padding-bottom: 3px;
+  font-family: system-ui;
+  font-weight: 400;
+}
+.top .right ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    gap: 10px 10px;
-    padding-top: 30px;
-}
-
-.parent > .item{
-	width: 100%;
-    height: 100%;
-   	margin-bottom:10px;
-
-}
-
-
-
-.top-row{
-    background-color: #f7f7f6;
-}
-
-.bottom-row{
-    background-color: #f6f6f6;
-}
-
-
-.image-file {
-    height: 100%;
-    width: 100%;
-}
-
-#image1 img{
-    width: 100%;
-    
-}
-
-#image2 img {
-    width: 40%;
-}
-
-
-.image-container2 {
-    height: auto;
-    width: 100%;
-
-}
-
-.main-column {
-    grid-template-columns: auto auto;
-    grid-row-start: auto;
-    
-}
-
-ul.specs{
-    float: left;
-    padding: 15px;
-    list-style: circle;
-    list-style-position: inside;
-    width: 100%;
-    height: 100%;
-    margin: 10px;
-    font-size: large;
-}
-
-ul.image-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-li.image-elem {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.Specs-details{
-    font-size: large;
-}
-
-
-
-@media only screen and (max-width: 600px) {
-   
-
-    
-    .parent {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    /* this is so that the image is center when the screen is too small */
-    .parent > .item {
-        width: 50%;
-        float: left;
-        background-color: white;
-    }
-
-    #image1 {
-        padding-top: 20%;
-       
-        
-    }
-    
-    .image-container {
-        object-fit: cover;
-    
-
-    }
-
-    #image1 img{
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #image2 img{
-        width: 40%;
-    }
-    
-  
-
-    
-}
+.bottom {
+  background: #fbfbfb;
+}/*# sourceMappingURL=style.css.map */
