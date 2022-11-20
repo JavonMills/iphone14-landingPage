@@ -69,22 +69,27 @@ li a:hover:not(.active) {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    gap: 0px 10px;
+    gap: 10px 10px;
     padding-top: 30px;
 }
 
 .parent > .item{
-	width: 400px;
-    height: 400px;
-    background:white;
+	width: 100%;
+    height: 100%;
    	margin-bottom:10px;
 
 }
 
 
-body {
-    background-color: white;
+
+.top-row{
+    background-color: #f7f7f6;
 }
+
+.bottom-row{
+    background-color: #f6f6f6;
+}
+
 
 .image-file {
     height: 100%;
@@ -93,7 +98,7 @@ body {
 
 #image1 img{
     width: 100%;
-    background-color: white;
+    
 }
 
 #image2 img {
@@ -150,21 +155,21 @@ li.image-elem {
    
 
     
-    .main-column {
+    .parent {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
     /* this is so that the image is center when the screen is too small */
-    .column-left{
+    .parent > .item {
         width: 50%;
         float: left;
         background-color: white;
     }
 
     #image1 {
-        padding-top: 0%;
+        padding-top: 20%;
        
         
     }
