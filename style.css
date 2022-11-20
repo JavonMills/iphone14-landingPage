@@ -59,11 +59,28 @@ li a:hover:not(.active) {
     color: green;
 }
 
-
-  
 .active {
     color: green;
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 0px 10px;
+    padding-top: 30px;
+}
+
+.parent > .item{
+	width: 400px;
+    height: 400px;
+    background:white;
+   	margin-bottom:10px;
+
+}
+
 
 body {
     background-color: white;
@@ -86,7 +103,7 @@ body {
 
 .image-container2 {
     height: auto;
-    width: 30%;
+    width: 100%;
 
 }
 
@@ -107,47 +124,26 @@ ul.specs{
     font-size: large;
 }
 
-
+ul.image-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
 
 li.image-elem {
     list-style: none;
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .Specs-details{
     font-size: large;
 }
 
-.column-left{
-    width: 50%;
-    float: left;
-    padding: 15px;
-}
-
-.column-right{
-    width: 50%;
-    float: left;
-    padding: 15px;
-    padding-top: 7%;
-}
-
-.column-left{
-    width: 50%;
-    float: left;
-    padding: 15px;
-}
-.column-right{
-    width: 50%;
-    float: left;
-    padding: 15px;
-    padding-top: 7%;
-}
-
-#bottomcol{
-    width: 50%;
-    
-
-}
 
 
 @media only screen and (max-width: 600px) {

@@ -47,3 +47,14 @@ The buy button will link to the apple webpage:
     <div id = "image3" class="image-file">
                         <img src="iphone-14-cables-witb-202209.jfif" alt="" >
                     </div>
+
+
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
